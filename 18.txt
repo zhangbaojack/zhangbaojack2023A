@@ -1,0 +1,103 @@
+前情回顾
+
+1. HTTP协议
+   应用层  tcp
+   请求和响应的格式
+
+   请求： 请求行  请求头  空行  请求体
+   响应： 响应行  响应头  空行  响应体
+
+2. webserver
+
+   类封装
+
+3. 并发
+
+   衡量并发的指标
+   高并发综合技术
+
+4. 项目开发流程
+   
+
+git 本地操作总结
+
+git init     初始化项目根目录
+
+#　将工作区内容暂存记录
+git add file...   # 增加或者修改文件
+git rm  file..　　　# 删除文件
+git mv  file dir　　# 移动文件
+
+# 提交到仓库保存
+git commit  -m 'msg...'
+
+#　保存仓库后操作：　
+　　git log    #　查看日志
+   git reflog
+
+   git checkout -- file #　找回文件
+
+# 版本跳转
+　　git reset --hark  HEAD^  #　较近的版本
+　　git reset --hark  commit_id
+
+　　git tag  #　标签跳转到远版本
+
+# 分支管理  （多人协同）
+
+ git branch [dev]
+ git checkout  [dev]
+ git merge  [dev]
+
+
+远程管理 —— github
+
+获取别人项目 ： git clone  项目地址
+              git pull  获取最新内容
+
+创建自己仓库 ：
+     非空仓库--》 git clone
+                 在本地写项目
+                 git push
+
+     空仓库 --》 git remote add origin [地址]
+                git push -u origin [分支]
+                git push
+
+
+在线词典
+
+1. 需求分析
+    C / S
+
+
+技术分析
+   并发 ： 多进程并发
+   网络 ： tcp
+
+   两个界面如何相互跳转
+   数据库数据表设计  dict--> words
+      words : id   word   mean
+
+功能划分，封装设计
+   注册  登录   查单词   历史记录
+
+   数据库在服务端如何使用？
+
+通信协议设计
+
+
+
+具体功能模块逻辑设计
+
+   搭建框架结构
+
+
+
+作业： 1. git语句命令自己试一试
+      2. 在线词典任务 最少做到通信协议设计
+
+
+
+
+
